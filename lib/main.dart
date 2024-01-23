@@ -148,7 +148,7 @@ class _HomeAppState extends State<HomeApp> {
                           Text(
                             "${laps[index]}",
                             style: const TextStyle(
-                              color: Colors.black45,
+                              color: Colors.white,
                               fontSize: 16.0,
                             ),
                           ),
@@ -202,8 +202,9 @@ class _HomeAppState extends State<HomeApp> {
                       onPressed: () {
                         reset();
                       },
-                      fillColor: Colors.black87,
-                      shape: const StadiumBorder(),
+                      shape: const StadiumBorder(
+                        side: BorderSide(color: Colors.black87),
+                      ),
                       child: const Text(
                         "Reset",
                         style: TextStyle(color: Colors.black),
